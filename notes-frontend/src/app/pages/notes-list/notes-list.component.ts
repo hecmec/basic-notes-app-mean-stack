@@ -85,7 +85,7 @@ export class NotesListComponent implements OnInit {
   notes: Note[] = new Array<Note>();
   filteredNotes: Note[] = new Array<Note>();
 
-  @ViewChild('filterInput') filterInputElRef: ElementRef<HTMLInputElement>;
+  @ViewChild('filterInput', { static: true }) filterInputElRef: ElementRef<HTMLInputElement>;
   
   constructor(private notesService: NotesService) { }
 

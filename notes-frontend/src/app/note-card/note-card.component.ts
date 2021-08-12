@@ -13,8 +13,8 @@ export class NoteCardComponent implements OnInit {
 
   @Output('delete') deleteEvent: EventEmitter<void> = new EventEmitter<void>();
 
-  @ViewChild('truncator') truncator: ElementRef<HTMLElement>;
-  @ViewChild('bodyText') bodyText: ElementRef<HTMLElement>;
+  @ViewChild('truncator', { static: true }) truncator: ElementRef<HTMLElement>;
+  @ViewChild('bodyText', { static: true }) bodyText: ElementRef<HTMLElement>;
 
   constructor(private renderer: Renderer2) { }
 
