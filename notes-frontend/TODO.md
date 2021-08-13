@@ -1,0 +1,8 @@
+- Take a note on top (with image note short cut)
+- choose background color
+- allow to pin
+- adding images to post
+- make it markdown
+- allow to make a copy
+- transform lines into checkboxes
+    - allow to check
